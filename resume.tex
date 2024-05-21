@@ -1,15 +1,16 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Original author:
-% David Herrera
-%
-% Original repository:
-% https://github.com/davidherrera83/david-herrera-resume
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[]{deedy-resume-openfont}
+\documentclass[hmargin=1.25cm,vmargin=0.75cm,scale=0.9]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{hyperref}
 \pagestyle{fancy}
 \fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{empty}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+}
 \begin{document}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     LAST UPDATED DATE
@@ -21,49 +22,51 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{David}{Herrera}{\href{mailto:david.herrera83@gmail.com}{david.herrera83@gmail.com}
-}
+\namesection{David}{Herrera}{\href{mailto:david.herrera83@gmail.com}{david.herrera83@gmail.com} | (385) 268-1173}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t]{0.33\textwidth} 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education} 
 \subsection{University of Phoenix}
 \descript{BS in Information Technology}
-\location{June 2018 | Provo, UT}
 \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 \subsection{Programming}
-Python \textbullet{} {C\#} \textbullet{} Selenium \textbullet{} Cypress \\
-Cucumber \textbullet{} MongoDB \textbullet{} Automated Pipelines
-Process Improvement \textbullet{} Systems Improvement \textbullet{} Technical Mentoring
+Python \textbullet{} C\# \textbullet{} Appium \textbullet{} Selenium \\
+Cypress \textbullet{} Cucumber \textbullet{} MongoDB \\
+Automated Pipelines \textbullet{} AWS \textbullet{} SQL \\
+CI/CD \textbullet{} Process \& Systems Improvement\\
 \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Links} 
 Github:// \href{https://github.com/davidherrera83}{\bf davidherrera83} \\
 LinkedIn:// \href{https://www.linkedin.com/in/davidherrera83}{\bf davidherrera83} \\
-Web:// \href{https://david-herrera.dev}{\bf david-herrera.dev} \\
-Web://\href{https://www.herrera-homestead.com}{\bf herrera-homestead.com} \\
+Web:// \href{https://www.herrera-homestead.com}{\bf herrera-homestead.com} \\
 \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Awards} 
-\begin{tabular}{rll}
-2020	     & NICE InContact Inspire Award\\
-2017	     & Phoenix Scholarship\\
-\end{tabular}
+2020 Inspire Award \\
+2017 Phoenix Scholarship \\
 \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Volunteering
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,6 +80,8 @@ Web://\href{https://www.herrera-homestead.com}{\bf herrera-homestead.com} \\
 \subsection{Mountainland College}
 \descript{Advisory Board Member}
 \location{Selected as a member of the Advisory Board for Mountainland Technical College}
+\sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Business
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,6 +89,8 @@ Web://\href{https://www.herrera-homestead.com}{\bf herrera-homestead.com} \\
 \subsection{Herrera Homestead}
 \descript{Founder/CTO}
 \location{Family enterprise that fosters generational wealth and community prosperity through innovative, automated business solutions and real estate investment.}
+\sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
@@ -92,39 +99,59 @@ Web://\href{https://www.herrera-homestead.com}{\bf herrera-homestead.com} \\
 \end{minipage} 
 \hfill
 \begin{minipage}[t]{0.66\textwidth} 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
+
 \runsubsection{Hudl}
 \descript{| Senior Management, Quality Assurance }
-\location{Sept 2022 - Present | Lincoln, NE}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{Sept 2022 - May 2024 | Lincoln, NE}
 \begin{tightemize}
-\item Architect and maintain comprehensive plans for QA processes, documentation, test management suites and tools for Business Operations \& Finance, resulting in 15\% increase in operational efficiency
-\item Managed a diverse team of Automation Engineers and established successful collaborations with top-tier Automation Architects, leading to a 20\% reduction in automation project timelines.
-\item Prioritized professional development within my team, conducting regular career-focused dialogues and knowledge exchange sessions, which contributed to a 10\% increase in team productivity and a 15\% decrease in error rates.
-\item Demonstrated hands-on involvement throughout the automation project life-cycle, effectively leading a team of skilled engineers and architects. This commitment ensured that all projects consistently met the highest standards of quality excellence, resulting in a 98\% quality delivery satisfaction.
+\item \textbf{Architected and maintained comprehensive QA processes}, documentation, and tools for Business Operations \& Finance, resulting in a 25\% increase in operational efficiency.
+\item \textbf{Hands-on Leadership:} Conducted code reviews, mentored team members, and contributed to coding.
+\item \textbf{Developed a learning platform} for Junior QA and Support teams to enhance automation skills.
+\item \textbf{Collaborated with cross-functional teams,} reducing project timelines by 20\%.
+\item \textbf{Ensured high-quality standards} throughout project phases, achieving 98\% satisfaction.
 \end{tightemize}
+
 \runsubsection{MX}
 \descript{| Automation Team Lead }
 \location{July 2021 - Sept 2022 | Lehi, UT}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed and executed an enterprise-level automation strategy, resulting in a 30\% reduction in manual testing efforts and a 20\% increase in testing efficiency..
-\item Played a pivotal role in building and maintaining crucial relationships and networks organization-wide, resulting in the collection of essential automation requirements and a 10\% reduction in project delays.
-\item Provided training and mentorship to manual QA engineers, empowering them to independently create and maintain automation frameworks, tests, and pipelines, which led to a 25\% increase in test automation coverage and a 15\% reduction in testing time.
-\item Defined the essential tools and resources required to establish a top-tier automation team, solidifying MX's leadership position in the industry.
+\item \textbf{Developed and executed enterprise-level automation strategy,} reducing manual testing efforts by 40\% and increasing testing efficiency by 35\%, leading to significant operational improvements.
+\item \textbf{Led comprehensive training and mentorship programs} for manual QA engineers, achieving a 35\% increase in test automation coverage and a 25\% reduction in testing time, fostering a highly skilled team.
+\item \textbf{Established and maintained key cross-functional relationships,} gathering essential automation requirements and reducing project delays by 20\%, ensuring smooth project execution.
+\item \textbf{Defined and implemented critical tools and resources,} building a top-tier automation team and solidifying MX's position as an industry leader in automation.
 \end{tightemize}
-\sectionsep
+
 \runsubsection{NICE InContact}
 \descript{| Software Engineer in Test }
 \location{January 2019 - July 2021 | Sandy, UT}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Spearheaded quality assurance initiatives for the nascent digital multi-channel team, resulting in a 15\% increase in product quality and a 20\% reduction in post-release defects.
-\item Leveraged my expertise in manual testing to mentor and guide other QA engineers, resulting in a 15\% increase in team expertise and a 30\% reduction in onboarding time for new team members.
-\item Monitored pivotal metrics to assess progress, including defect density, test coverage, and test execution efficiency, and presented regular reports to the R\&D unit on both weekly and monthly intervals, enabling data-driven decision-making and achieving a 98\% adherence to quality benchmarks.
+\item \textbf{Spearheaded quality assurance initiatives} for the digital multi-channel team, increasing product quality by 25\% and reducing post-release defects by 30\%.
+\item \textbf{Mentored and guided QA engineers} in testing, resulting in a 20\% increase in team expertise and a 40\% reduction in onboarding time for new team members.
+\item \textbf{Monitored and reported pivotal metrics} such as defect density, test coverage, and test execution efficiency, achieving a 98\% adherence to quality benchmarks and enabling data-driven decision-making.
 \end{tightemize}
+
+\runsubsection{Autopoint}
+\descript{| QA Lead }
+\location{January 2017 - January 2019 | South Jordan, UT}
+\begin{tightemize}
+\item \textbf{Led QA efforts} for SaaS, backend, and mobile applications, developing comprehensive test plans, test cases, and procedures to ensure top-quality delivery.
+\item \textbf{Implemented automated testing frameworks} to streamline testing processes and improve efficiency.
+\item \textbf{Collaborated with cross-functional teams,} maintaining high standards of quality and ensuring seamless integration and deployment of updates.
+\end{tightemize}
+
+\runsubsection{Ghostery}
+\descript{| QA Engineer }
+\location{November 2015 - November 2016 | Sandy, UT}
+\begin{tightemize}
+\item \textbf{Ensured the quality} of SaaS, Web Apps, and mobile applications by designing, executing, and maintaining test plans and test cases.
+\item \textbf{Developed efficient testing processes} to validate functionality, performance, security, and scalability of products.
+\item \textbf{Conducted mobile testing using Appium}, ensuring robust and reliable mobile application performance.
+\end{tightemize}
+
 \end{minipage}
 \end{document}
